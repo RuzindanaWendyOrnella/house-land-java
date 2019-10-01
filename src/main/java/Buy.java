@@ -23,6 +23,7 @@ public class Buy {
         this.meansOfPayment= meansOfPayment;
         this.price=price;
 
+
     }
     public String getName() {
 
@@ -44,7 +45,6 @@ public class Buy {
     public String getPurpose() {
         return purpose;
     }
-
     public String getMeansOfPayment() {
 
         return meansOfPayment;
@@ -53,7 +53,6 @@ public class Buy {
     public String getPrice() {
         return price;
     }
-
     public  int getId() {
         return id;
     }
