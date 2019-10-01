@@ -1,0 +1,25 @@
+{{#partial "content"}}
+
+    <br><br><br><br><br><br>
+    <form style="background-color:black;color:black;opacity:0.7;text-align:center" action="/add" method="post">
+        <h1 style="padding-top:1%;color:black">Add house!!!!!!</h1>
+        <label for="name" style="color:white"> Name</label><br>
+        <input id="name" style="color:black" name="name" type="text"><br>
+        <label for="email" style="color:white">email</label><br>
+        <input id="email" Name="email" type="text" style="color:black"><br>
+        <label for="property" style="color:white">property</label><br>
+        <input id="property" name="property" style="color:black" type="text"><br>
+        <label for="location" style="color:white">location</label><br>
+        <input id="location" style="color:black" name="location" type="text"><br>
+       <label for="purpose" style="color:white">purpose</label><br>
+       <input id="purpose" name="purpose" style="color:black" type="text"><br><br>
+        <label for="meansOfPayment" style="color:white">meansOfPayment</label><br>
+        <input id="meansOfPayment" name="meansOfPayment" style="color:black" type="text"><br><br>
+       <label for="price" style="color:white">price</label><br>
+        <input id="price" name="price" style="color:black" type="text"><br><br>
+        <button type="submit" class="btn btn-default" >Add</button><br>
+    </form>
+
+{{/partial}}
+
+{{> layout.hbs}}
