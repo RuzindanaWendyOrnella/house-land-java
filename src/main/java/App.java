@@ -2,6 +2,7 @@ import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 import static spark.Spark.*;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;;
@@ -20,12 +21,13 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             String name = request.queryParams("name");
             String email = request.queryParams("email");
-            String property = request.queryParams("property");
+            String link =  request.queryParams("link");
+            System.out.println(link);
             String location = request.queryParams("location");
             String purpose = request.queryParams("purpose");
             String meansOfPayment = request.queryParams("meansOfPayment");
            String price = request.queryParams("price");
-           Buy newBuy = new Buy(name, email, property, location,purpose,meansOfPayment,price);
+           Buy newBuy = new Buy(name, email, link, location,purpose,meansOfPayment,price);
             model.put("newBuy", newBuy);
             newBuy.save();
             return new ModelAndView(model, "success.hbs");
